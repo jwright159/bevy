@@ -43,6 +43,7 @@ pub mod prelude {
 }
 
 pub use audio::*;
+pub use audio_output::AudioOutput;
 pub use audio_source::*;
 pub use pitch::*;
 
