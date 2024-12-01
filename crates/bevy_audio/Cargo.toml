@@ -16,21 +16,21 @@ bevy_ecs = { path = "../bevy_ecs", version = "0.14.2" }
 bevy_hierarchy = { path = "../bevy_hierarchy", version = "0.14.2" }
 bevy_math = { path = "../bevy_math", version = "0.14.2" }
 bevy_reflect = { path = "../bevy_reflect", version = "0.14.2", features = [
-  "bevy",
+	"bevy",
 ] }
 bevy_transform = { path = "../bevy_transform", version = "0.14.2" }
 bevy_derive = { path = "../bevy_derive", version = "0.14.2" }
 bevy_utils = { path = "../bevy_utils", version = "0.14.2" }
 
 # other
-rodio = { version = "0.18", default-features = false }
+rodio = { git = "https://github.com/jwright159/rodio.git", branch = "jadys-awesome-hax", default-features = false }
 
 [target.'cfg(target_os = "android")'.dependencies]
 cpal = { version = "0.15", optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-rodio = { version = "0.18", default-features = false, features = [
-  "wasm-bindgen",
+rodio = { git = "https://github.com/jwright159/rodio.git", branch = "jadys-awesome-hax", default-features = false, features = [
+	"wasm-bindgen",
 ] }
 
 [features]
