@@ -25,8 +25,8 @@ use crate::AudioSink;
 /// since the memory cost will be the same.
 /// However, repeatedly inserting this resource into the app will **leak more memory**.
 #[derive(Resource)]
-pub(crate) struct AudioOutput {
-    stream_handle: Option<OutputStreamHandle>,
+pub struct AudioOutput {
+    pub stream_handle: Option<OutputStreamHandle>,
 }
 
 impl Default for AudioOutput {
